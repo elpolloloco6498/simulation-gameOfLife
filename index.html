@@ -1,0 +1,56 @@
+<html lang="fr">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Game of Life</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+
+    <body>
+        
+        <header>
+            <h1 class="main_title">Game of Life Programmed in Javascript</h1>
+        </header>
+        
+        <div class="animation" id="animation">
+            <div class="buttons">
+                <button id="button_start_anim" class="button">Start game</button>
+                <button id="button_stop_anim" class="button">Stop game</button>
+                <button id="button_step" class="button">Step</button>
+                <button id="button_clear" class="button">Clear Grid</button>
+                <button id="button_random" class="button">Randomise</button>
+                <input type="checkbox" class="checkbox" id="checkboxGrid" checked="true">
+                <label for="checkboxGrid">Grid</label>
+            </div>
+            
+            <script>
+                var WIN_WIDTH = window.screen.width;
+                var WIN_HEIGHT = window.screen.height;
+                var margin = 0.25;
+                
+                var canvas = document.createElement("canvas");
+                var textError = document.createTextNode("Erreur le dessin HTML n'est pas supporté par ce navigateur !");
+                canvas.appendChild(textError);
+                canvas.id = "my_canvas";
+                
+                canvas.width = (WIN_WIDTH - margin * WIN_WIDTH) * devicePixelRatio;
+                canvas.height = (WIN_HEIGHT - margin * WIN_HEIGHT) * devicePixelRatio;
+                
+                var elt = document.getElementById("animation");
+                elt.appendChild(canvas);
+            </script>
+            <!--
+            <canvas id="my_canvas" width=400 height=360>
+                Ce navigateur ne supporte pas les animations, CHANGE DE NAVIGATEUR !!! DINOSAURE !
+            </canvas> -->
+            <p>Le jeu de la vie n’est pas un jeu, puisqu'il ne nécessite aucun joueur. Il s’agit d’un automate cellulaire, un modèle où chaque état conduit mécaniquement à l’état suivant à partir de règles pré-établies.</p>
+            
+        </div>
+        <footer>
+            <h3>created by ElPolloLoco6498</h3>
+        </footer>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
