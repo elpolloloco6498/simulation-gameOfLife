@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #808C7C;
+    color: #3A3643;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    text-align: justify;
+    margin: 2%;
+}
+
+header {
+    background-color: #E4A623;
+    text-align: center;
+}
+
+footer {
+    background-color: #E4A623;
+    text-align: center;
+}
+
+canvas {
+    border: 1px solid #E4A623;
+    background-color: white;
+}
+
+.animation {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 992px) {
+    .button {
+        width: 200px;
+        height: 50px;
+        font-size: 25px;
+    }
+    
+    body {
+        font-size: 25px;
+    }
+    
+    .checkbox {
+        width: 40px;
+        height: 40px;
+    }
+    
+}
