@@ -10,6 +10,10 @@ body {
     padding: 0;
 }
 
+section {
+    text-align: center;
+}
+
 p {
     text-align: justify;
     margin: 2%;
